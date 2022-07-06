@@ -1,0 +1,134 @@
+
+/* <i class="fab fa-instagram instagram"> </i> */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  body.dark {
+    --bg-color: linear-gradient(75deg, #b6bdcb,  #b6fbff );
+    --text-color-option: white; /* sujeito a alterações   */
+    --text-color-nome: #196274;
+    --text-color-arroba: #0c3f4c;
+    --bg-color-buttons: #5FB2C6;
+    --bg-color-buttons-hover: #2b8298 ;
+    --border-photo: 4px solid #5FB2C6;
+  }
+  
+  body.pink {
+    --bg-color: linear-gradient(75deg, #AA076B,  #f7bb97);
+    --text-color-option: rgb(253, 253, 253); /* sujeito a alterações   */
+    --text-color-nome: #680f6e;
+    --text-color-arroba: #580456;
+    --bg-color-buttons:linear-gradient(75deg, #650340,  #c04cbe);
+    --bg-color-buttons-hover: linear-gradient(75deg, #c04cbe, #650340 );
+     --border-photo: 4px solid #820e73;
+  }
+  
+  
+  
+  
+  a {
+    text-decoration: none;  
+  }
+  
+  /*  Aplicar gradiente #EDF2FF */
+  body {
+    background: var(--bg-color);
+    font-family: 'Cormorant Garamond', serif;
+  }
+  
+  .container {
+    
+    text-align: center;
+    width: 350px;
+    margin: 70px auto;
+  
+  }
+  
+  img  {
+    width: 100%;
+  }
+  
+  img.avatar {
+    border-radius: 55%;
+    padding: 3px;
+    border: var(--border-photo);
+    width: 100px;
+    height: 100px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    color: var(--text-color-nome); /* VAR */
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-family: 'Indie Flower', cursive; /* sujeito a mudanças*/
+  }
+  
+  .username{
+    font-family: 'Righteous', cursive;
+    color: var(--text-color-arroba);
+    font-weight: 500;
+    font-size: 18px;  
+  }
+  
+  ul { /* tira os pontos da lista não ordenada */
+    list-style: none;
+    margin: 48px 0;
+  
+  }
+  
+  
+  ul li a {
+    font-family: 'Roboto', sans-serif;
+    height: 53px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background: var(--bg-color-buttons);
+    color: var(--text-color-option);
+    text-transform: uppercase;
+    
+    margin-bottom: 16px;
+    border-radius: 8px;
+    transition: background 650ms;
+  
+  }
+  /* pseudo-class */
+  ul li a:hover {
+    background: var(--bg-color-buttons-hover);
+  }
+  
+  
+  footer {
+    background-image: url(""); /* colocar ainda */
+    font-weight: 550;
+    font-size: 13px;
+    color: rgb(1, 0, 6);
+    opacity: 0.7;
+    transition: opacity 300ms;
+    cursor: pointer;
+  }
+  
+  footer:hover {
+    opacity: 1;
+  }
+  
+  
+  footer a {
+    
+    color: rgb(0, 0, 0);
+    text-decoration:underline;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
